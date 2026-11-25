@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="stylesheet2.css">
+    <style>
+        /* target the body for the whole page background */
+        body {
+            background-color: #202833;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #2d3b4d;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h3 {
+            margin: 0 0 10px;
+            font-size: 1.25rem;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            color: #ffd166;
+            font-weight: bold;
+            margin: 0 0 12px;
+        }
+
+        button {
+            background-color: #ff7f50;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Product Catalog</h1>
+    <p style="text-align: center;">Welcome to our product catalog!</p>
+    <a href="#cart" class="cart-link">🛒 Cart</a>
+
+
+    <div class="product-grid">
+<article class="product-card">
+    <img src="800px-GSG0680090_ee78f78a85084315be8df775cf63d7e4.jpg"
+         alt="Monster X figure">
+
+    <div class="product-info">
+        <h3>Monster X</h3>
+        <p class="price">₱1,256.00</p>
+        <button type="button">Add to Cart</button>
+    </div>
+</article>
+
+<article class="product-card">
+    <img src="800px-MMS_Keizer_Ghidorah.jpeg"
+         alt="Keizer Ghidorah figure">
+
+    <div class="product-info">
+        <h3>Keizer Ghidorah</h3>
+        <p class="price">₱1,450.00</p>
+        <button type="button">Add to Cart</button>
+    </div>
+</article>
+
+<article class="product-card">
+    <img src="800px-MMS_2019_-_Gigan_2004.jpg"
+         alt="Gigan 2004 figure">
+
+    <div class="product-info">
+        <h3>Gigan (2004)</h3>
+        <p class="price">₱1,600.00</p>
+        <button type="button">Add to Cart</button>
+    </div>
+</article>
+
+<article class="product-card">
+    <img src="800px-MMS_SpaceGodzilla_2019.jpeg"
+         alt="SpaceGodzilla figure">
+
+    <div class="product-info">
+        <h3>SpaceGodzilla</h3>
+        <p class="price">₱1,707.00</p>
+        <button type="button">Add to Cart</button>
+    </div>
+</article>
+
+    <article class="product-card">
+        <img src="MMS_Anguirus_2004.jpg" alt="Anguirus figure">
+        <div class="product-info">
+            <h3>Anguirus (2004)</h3>
+            <p class="price">₱1,680.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="Shin_Godzilla_2016.jpg" alt="Shin Godzilla figure">
+        <div class="product-info">
+            <h3>Shin Godzilla (2016)</h3>
+            <p class="price">₱1,510.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="Showa_Gigan_2018.jpeg" alt="Gigan figure">
+        <div class="product-info">
+            <h3>Gigan (1972)</h3>
+            <p class="price">₱1,250.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="Heavy_arms_Kiryu_2018.jpeg" alt="Kiryu figure">
+        <div class="product-info">
+            <h3>Kiryu (Heavy Arms Ver.)</h3>
+            <p class="price">₱803.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="MMS_Ghidorah2018.jpg" alt="Ghidorah figure">
+        <div class="product-info">
+            <h3>Ghidorah (2018)</h3>
+            <p class="price">₱1,256.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="MMS_Godzilla_2019.jpg" alt="Godzilla figure">
+        <div class="product-info">
+            <h3>Godzilla (2019)</h3>
+            <p class="price">₱1,370.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="MMS_Mothra_2019.jpg" alt="Mothra figure">
+        <div class="product-info">
+            <h3>Mothra (2019)</h3>
+            <p class="price">₱1,417.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="MMS_Rodan_2019.jpg" alt="Rodan figure">
+        <div class="product-info">
+            <h3>Rodan (2019)</h3>
+            <p class="price">₱1,500.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="MMS_King_Ghidorah_2019.jpg" alt="King Ghidorah 2019 figure">
+        <div class="product-info">
+            <h3>King Ghidorah (2019)</h3>
+            <p class="price">₱1,770.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="King Ghidorah 2001.jpg" alt="King Ghidorah 2001 figure">
+        <div class="product-info">
+            <h3>King Ghidorah (2001)</h3>
+            <p class="price">₱1,250.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="MMS_Moguera_2019.jpeg" alt="MOGUERA figure">
+        <div class="product-info">
+            <h3>MOGUERA</h3>
+            <p class="price">₱1,983.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="Biollante_2018.jpeg" alt="Biollante figure">
+        <div class="product-info">
+            <h3>Biollante</h3>
+            <p class="price">₱1,600.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="MMS_Megalon_.jpg" alt="Megalon figure">
+        <div class="product-info">
+            <h3>Megalon (1973)</h3>
+            <p class="price">₱1,310.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="MMS_Kong.jpg" alt="Kong figure">
+        <div class="product-info">
+            <h3>Kong (2021)</h3>
+            <p class="price">₱850.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="MMS_Mechagodzilla_2021.png" alt="Mechagodzilla figure">
+        <div class="product-info">
+            <h3>Mechagodzilla (2021)</h3>
+            <p class="price">₱1,200.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+        <img src="Little Godzilla.jpg" alt="Little Godzilla figure">
+        <div class="product-info">
+            <h3>Little Godzilla</h3>
+            <p class="price">₱1,900.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </article>
+
+    <article class="product-card">
+            <img src="Godzilla 1971.jpg" alt="Godzilla figure">
+
+            <div class="product-info">
+                <h3>Godzilla (1971)</h3>
+                <p class="price">₱1,800.00</p>
+                <button type="button">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="SpaceGodzilla 2.0.jpg" alt="SpaceGodzilla figure">
+
+            <div class="product-info">
+                <h3>SpaceGodzilla (2.0)</h3>
+                <p class="price">₱1,110.00</p>
+                <button type="button">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Hedorah_2004.jpg" alt="Hedorah figure">
+
+            <div class="product-info">
+                <h3>Hedorah (2004)</h3>
+                <p class="price">₱1,230.00</p>
+                <button type="button">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="Godzilla 2002.jpg" alt="Godzilla figure">
+
+            <div class="product-info">
+                <h3>Godzilla (2002)</h3>
+                <p class="price">₱1,103.00</p>
+                <button type="button">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="King Ghidorah_2026.jpeg" alt="King Ghidorah figure">
+
+            <div class="product-info">
+                <h3>King Ghidorah (2026)</h3>
+                <p class="price">₱3,310.00</p>
+                <button type="button">Add to Cart</button>
+            </div>
+        </article>
+    </div>
+
+
+</div>
+
+<center>
+    <button onclick="window.location.href='Kaiju Collectibles Homepage.html';">
+        Back to Home
+    </button>
+    <button onclick="window.location.href='Premium_Bandai.html';">
+        Go to Premium Bandai Figures
+    </button>
+
+    <button onclick="window.location.href='Contact Us.html';">
+        Contact Us
+    </button>
+</center>
+
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>KAIJU COLLECTIBLES</h3>
+        <p>Collect your favorite monsters.</p>
+        <p>&copy; 2026 Kaiju Collectibles. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
